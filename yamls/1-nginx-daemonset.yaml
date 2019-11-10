@@ -14,3 +14,5 @@ spec:
       containers:
       - image: nginx
         name: nginx
+#      nodeSelector:
+#        disktype: "fast"

@@ -6,9 +6,10 @@ metadata:
     type: local
 spec:
   storageClassName: manual
+  persistentVolumeReclaimPolicy: Delete
   capacity:
-    storage: 1Gi
+    storage: 100Mi
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/kube"
+    path: "/tmp/kube"
